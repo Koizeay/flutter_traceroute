@@ -28,7 +28,7 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 31
-
+    namespace 'com.traceroute.flutter_traceroute'
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
