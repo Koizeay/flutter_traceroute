@@ -3,14 +3,16 @@
 A minimalist Flutter plugin for performing **TRACEROUTE**
 Currently supported on *Android* and *IOS*
 
+_**Forked from https://github.com/youssef-fk/flutter_traceroute**_
+
 ## Limitations
 
 - TTL is not supported on Android
-- IOS takes a little more time between steps, not sure what the root cause is
+- iOS takes a little more time between steps, not sure what the root cause is
 
 ## Installation
 
-### IOS
+### iOS
 
 At the beginning of your **Podfile**, set the ios platform version to `14`
 
@@ -21,8 +23,8 @@ platform :ios, '14.0'
 At the end of your **Podfile**, add the following pods
 
 ```ruby
-pod 'SimplePing', :git => 'https://github.com/youssef-fk/SimplePing.git'
-pod 'SimpleTracer', :git => 'https://github.com/youssef-fk/SimpleTracer.git'
+pod 'SimplePing', :git => 'https://github.com/Koizeay/SimplePing.git'
+pod 'SimpleTracer', :git => 'https://github.com/Koizeay/SimpleTracer.git'
 ```
 
 ### Android
@@ -34,7 +36,7 @@ All set
 ```dart
 const args = TracerouteArgs(
   host: '8.8.8.8',
-  ttl: 20, // IOS ONLY
+  ttl: 20, // iOS ONLY
 );
 final stream = FlutterTraceroute().trace(args);
 stream.listen((event) {
@@ -59,7 +61,7 @@ stream.listen((event) {
 
 ### Screenshot
 
-![Example screenshot](https://github.com/youssef-fk/flutter_traceroute/blob/main/example/example.jpg?raw=true)
+![Example screenshot](https://github.com/Koizeay/flutter_traceroute/blob/main/example/example.jpg?raw=true)
 
 ## Contributing
 
@@ -67,4 +69,4 @@ Pull requests are welcome!
 
 ## License
 
-[MIT](https://github.com/youssef-fk/flutter_traceroute/blob/master/LICENSE)
+[MIT](https://github.com/Koizeay/flutter_traceroute/blob/master/LICENSE)
